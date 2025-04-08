@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        p {
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <p id="resultados"></p>
+    <script>
+        const num = Number(window.prompt("Digite um numero: "))
+        titulo = document.getElementsByTagName("h1")[0]
+        titulo.innerHTML  = `Seu numero e ${num}`
+        res = document.getElementById("resultados")
+
+        //raizQ
+
+        let raizQ = ((num ** 0.5))
+        if (Number.isInteger(raizQ) == false) {
+            raizQ = raizQ.toFixed(2)
+            res.innerHTML += `Raiz quadrada aproximada: ${raizQ} <br>`
+        } else {
+            res.innerHTML += `Raiz quadrada: ${raizQ} <br>`
+        }
+        
+        res.innerHTML += `${num} e inteiro: ${Number.isInteger(num)} <br>`
+        res.innerHTML += `E NaN: ${Number.isNaN(num)} <br>`
+        res.innerHTML += `Arredondando para baixo: ${Math.floor(num)} <br>`
+        res.innerHTML += `Arredondando para cima: ${Math.ceil(num)} <br>`
+        res.innerHTML += `Arredondamento comum: ${Math.round(num)} <br>`
+        res.innerHTML += `Com duas casas decimais: ${num.toFixed(2)} <br>`
+    </script>
+</body>
+</html>
