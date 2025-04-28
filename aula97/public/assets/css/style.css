@@ -1,0 +1,42 @@
+:root {
+    --cor-de-fundo-noturno: #121212;
+    --cor-de-texto-noturno: #E0E0E0;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-de-fundo-noturno);
+}
+
+section.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 50vw;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.opcoes{
+    width: 100%;
+}
+
+#QtdCaracter {
+    width: 60px;
+    -moz-appearance: textfield;
+}
+
+button.gerar {
+    margin-top: 10px;
+}
