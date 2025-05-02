@@ -16,10 +16,11 @@
     "url": "https://github.com/renanfriande/javascriptudemy/issues"
   },
   "homepage": "https://github.com/renanfriande/javascriptudemy#readme",
-  "description": "",
   "devDependencies": {
     "@babel/cli": "^7.27.0",
     "@babel/core": "^7.26.10",
-    "@babel/preset-env": "^7.26.9"
-  }
+    "@babel/preset-env": "^7.26.9",
+    "nodemon": "^3.1.10"
+  },
+  "description": ""
 }
