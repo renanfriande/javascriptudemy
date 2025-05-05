@@ -1,0 +1,14 @@
+    <%- include("includes/head")%>
+
+    <section class="container">
+        <h1>
+            <%= umaVariavelLocal %>
+        </h1>
+        <form action="" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <input type="text" id="cliente" name="cliente"> <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <%- include("includes/script")%>
