@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --azulEscuro: #0a4f70;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--azulEscuro);
+}
+
+button {
+  cursor: pointer;
+}
